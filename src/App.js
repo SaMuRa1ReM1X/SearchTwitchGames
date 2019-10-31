@@ -1,24 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
+import twitchlogo from './twitch-icon.svg'
 import './App.css';
+
+class NavBar extends React.Component {
+  render() {
+      return (
+          <div>
+              <ul id="nav">
+                <li><img src={twitchlogo} className="twitch-logo" alt="twitch-logo" /> Search Twitch Games</li>
+              </ul>
+          </div>
+      )
+
+  }
+}
 
 function App() {
   return (
     <div className="App">
+      <div className="NavBar">
+        <NavBar/>
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={twitchlogo} className="twitch-logo" alt="twitch-logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            Search for your favorite games in the search box below.
+            Click on their name to find out more info about them. 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          :monkaS
+        </p>
       </header>
+      <body>
+        <div className="SearchText">
+          <b>Search: </b>
+          <input
+            type="text" 
+          />
+        </div>
+       
+        {/* <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+        </a> */}
+
+      </body>
     </div>
   );
 }

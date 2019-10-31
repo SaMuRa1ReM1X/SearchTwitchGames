@@ -7,16 +7,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+#nav {
+  text-align: left;
+  width:100%;
+  float: top;
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  background:#9146FF;
+  font-size: 75px;
+  color: white;
+}
+#nav-list {
+  float: top;
 }
